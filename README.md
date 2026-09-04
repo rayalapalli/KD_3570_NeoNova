@@ -73,7 +73,7 @@ This repository keeps both phases side by side so the sim code, the hardware cod
 | **1A** | Plant infection detection — ArUco-based ROI extraction + image processing | Simulation | [`task_1a_plant_infection_detection.py`](simulation_ws/src_ours/swift_pico/scripts/task_1a_plant_infection_detection.py) | — |
 | **1C** | Position-hold PID controller for the Swift Pico drone | Simulation | [`task_1c_pico_controller.py`](simulation_ws/src_ours/swift_pico/scripts/task_1c_pico_controller.py) | [bag file](simulation_ws/src_ours/swift_pico/bagfiles/task_1c) |
 | **2A** | Waypoint navigation: action server, action client, waypoint service | Simulation | [server](simulation_ws/src_ours/swift_pico/scripts/task_2a_waypoint_action_server.py) · [client](simulation_ws/src_ours/swift_pico/scripts/task_2a_waypoint_action_client.py) · [waypoints service](simulation_ws/src_ours/swift_pico/scripts/task_2a_waypoints_service.py) | [bag file](simulation_ws/src_ours/swift_pico/bagfiles/task_2a) · [rqt_graph](docs/figures/KD_3570_rqt_graph.png) |
-| **3C** | Hardware Testing | Hardware | — | (https://youtu.be/T4wlOJbgy7k?si=QKL9AONeVU3cpXaV) |
+| **3C** | Hardware Testing | Hardware | — | https://youtu.be/T4wlOJbgy7k?si=QKL9AONeVU3cpXaV |
 | **4B** | Hardware PID controller: arming sequence, throttle safety clamp, EMA filtering | Hardware | [`task_4b_hw_pico_controller.py`](hardware_ws/src_ours/swift_pico_hw/scripts/task_4b_hw_pico_controller.py) | [bag file](hardware_ws/src_ours/swift_pico_hw/bagfiles/task_4b) |
 
 > ⚠️ **Task 3C:** the uploaded submission archive for this task was empty. Re-export the actual files from your workstation and place them in `task_submissions/task_3c/` and the matching package folder before your next push.
