@@ -1,0 +1,57 @@
+#!/usr/bin/env python3
+
+import rclpy
+from rclpy.node import Node
+from geometry_msgs.msg import Pose, PoseArray
+from waypoint_navigation.action import NavToWaypoint
+from waypoint_navigation.srv import GetWaypoints
+
+class WayPoints(Node):
+
+    def __init__(self):
+        super().__init__('waypoints_service')
+        self.srv = self.create_service(GetWaypoints, 'waypoints', self.waypoint_callback)
+        
+        # Add all waypoints from task description
+        self.waypoints = [
+            [-7.00, 0.00, 29.22],  # hover
+            [-7.64, 3.06, 29.22],  # wp1
+            [-8.22, 6.02, 29.22],  # wp2
+            [-9.11, 9.27, 29.27],  # wp3
+            [-5.98, 8.81, 29.27],  # wp4
+            [-3.26, 8.41, 29.88],  # wp5
+            [0.87, 8.18, 29.5],   # wp6
+            [3.93, 7.35, 29.05]    # wp7
+        ]
+        self.get_logger().info(f"Waypoint Service started with {len(self.waypoints)} waypoints")
+
+    def waypoint_callback(self, request, response):
+        if request.get_waypoints == True:
+            response.waypoints = PoseArray()
+            response.waypoints.poses = [Pose() for _ in range(len(self.waypoints))]
+            
+            for i in range(len(self.waypoints)):
+                response.waypoints.poses[i].position.x = self.waypoints[i][0]
+                response.waypoints.poses[i].position.y = self.waypoints[i][1]
+                response.waypoints.poses[i].position.z = self.waypoints[i][2]
+            
+            self.get_logger().info("Sending waypoints to client")
+            return response
+        else:
+            self.get_logger().info("Request rejected")
+            return response
+
+def main():
+    rclpy.init()
+    waypoints = WayPoints()
+
+    try:
+        rclpy.spin(waypoints)
+    except KeyboardInterrupt:
+        waypoints.get_logger().info('KeyboardInterrupt, shutting down.\n')
+    finally:
+        waypoints.destroy_node()
+        rclpy.shutdown()
+
+if __name__ == '__main__':
+    main()

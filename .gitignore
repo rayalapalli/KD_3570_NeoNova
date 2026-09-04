@@ -1,0 +1,30 @@
+# Official eYRC packages — pulled in locally via `git clone -b kd_sim/kd_hw ... src`
+# Not vendored in this repo; each contributor clones it fresh.
+simulation_ws/src/
+hardware_ws/src/
+
+# ROS 2 colcon build artifacts
+simulation_ws/build/
+simulation_ws/install/
+simulation_ws/log/
+hardware_ws/build/
+hardware_ws/install/
+hardware_ws/log/
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+
+# OS / editor cruft
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Large media staged outside git (keep bag files tracked; ignore raw camera dumps)
+*.mp4
+*.mov
+!docs/figures/**
