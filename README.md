@@ -76,7 +76,6 @@ This repository keeps both phases side by side so the sim code, the hardware cod
 | **3C** | Hardware Testing | Hardware | — | https://youtu.be/T4wlOJbgy7k?si=QKL9AONeVU3cpXaV |
 | **4B** | Hardware PID controller: arming sequence, throttle safety clamp, EMA filtering | Hardware | [`task_4b_hw_pico_controller.py`](hardware_ws/src_ours/swift_pico_hw/scripts/task_4b_hw_pico_controller.py) | [bag file](hardware_ws/src_ours/swift_pico_hw/bagfiles/task_4b) |
 
-> ⚠️ **Task 3C:** the uploaded submission archive for this task was empty. Re-export the actual files from your workstation and place them in `task_submissions/task_3c/` and the matching package folder before your next push.
 
 The original, as-submitted graded archives (unmodified) are preserved verbatim under [`task_submissions/`](task_submissions/) for reference/grading traceability.
 
