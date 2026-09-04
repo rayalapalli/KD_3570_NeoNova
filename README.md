@@ -12,7 +12,7 @@
 
 ## 🎥 Watch the KD_3570 Demonstration Video
 
-> **[REPLACE_WITH_YOUTUBE_LINK]** — add your main demo video link here, e.g. `https://youtu.be/XXXXXXXXXXX`
+> (https://youtu.be/1GM2yyPSchY?si=vmn6M0U92959FTc4)
 
 ---
 
@@ -61,8 +61,8 @@ This repository keeps both phases side by side so the sim code, the hardware cod
 
 ### 🎥 Full System Demonstration
 
-> **[REPLACE_WITH_YOUTUBE_LINK]** — full run video
-> **[REPLACE_WITH_YOUTUBE_LINK]** — hardware-only run video (optional second video)
+> [Simulation_run ](https://youtu.be/1GM2yyPSchY?si=vmn6M0U92959FTc4)— full run video
+
 
 ---
 
