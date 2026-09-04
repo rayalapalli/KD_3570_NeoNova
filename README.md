@@ -49,7 +49,7 @@ This repository keeps both phases side by side so the sim code, the hardware cod
 
 | | |
 |---|---|
-| ![rqt graph](docs/figures/KD_3570_rqt_graph.png) *Live ROS 2 node/topic graph (`rqt_graph`) captured during Task 2A* | **[SOFTWARE_ENV](docs/figures/Screenshot from 2026-09-04 10-55-00.png)** *e.g. a screenshot of Gazebo + RViz/rqt running side by side* |
+| ![rqt graph](docs/figures/KD_3570_rqt_graph.png) *Live ROS 2 node/topic graph (`rqt_graph`) captured during Task 2A* | ![rqt graph](docs/figures/Software_env.png) *e.g. a screenshot of Gazebo + RViz/rqt running side by side* |
 
 ### Hardware & Testing Environment
 
