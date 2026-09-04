@@ -55,7 +55,7 @@ This repository keeps both phases side by side so the sim code, the hardware cod
 
 | | |
 |---|---|
-| **[ADD_HARDWARE_PHOTO_HERE]** *Swift Pico drone hardware* | **[ADD_TEST_ARENA_PHOTO_HERE]** *Greenhouse / arena test setup* |
+| ![Hardware](docs/figures/Hardware.png)*Swift Pico drone hardware* | ![Hardware_env](docs/figures/Hardware_env.png) *Greenhouse / arena test setup* |
 
 > Drop your actual photos into `docs/figures/` (e.g. `drone_hardware.jpg`, `test_arena.jpg`) and swap the placeholder cells above for `![alt](docs/figures/your_file.jpg)`.
 
