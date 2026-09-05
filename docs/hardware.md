@@ -15,4 +15,4 @@
 
 ## Photos
 
- ![Hardware](docs/figures/Hardware.png)*Swift Pico drone hardware* | ![Hardware_env](docs/figures/Hardware_env.png) *Greenhouse / arena test setup* |
+ ![Hardware](figures/Hardware.png)*Swift Pico drone hardware* | ![Hardware_env](figures/Hardware_env.png) *Greenhouse / arena test setup* |
